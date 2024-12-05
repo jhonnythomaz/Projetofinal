@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // Usando alias Router
+import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import Produtos from './pages/Produtos';
+import Contato from './pages/Contato';
+import Menu from './Components/menu';
+import Footer from './Components/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>  {/* Usando Router como alias para BrowserRouter */}
+      <div>
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
