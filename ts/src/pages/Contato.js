@@ -55,12 +55,7 @@ const Contato = () => {
         <button type="submit" className="submit-button">Enviar</button>
       </form>
 
-      {/* Informações de contato */}
-      <div className="contato-info">
-        <h2>Entre em contato conosco!</h2>
-        <p>Telefone: (11) 98765-4321</p>
-        <p>Email: contato@exemplo.com</p>
-      </div>
+    
     </div>
   );
 };

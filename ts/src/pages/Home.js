@@ -3,9 +3,14 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
+      <br></br>
       <h1>Bem-vindo ao Sistema de Consulta de Treinamento</h1>
-      <p>Acompanhe seus treinos e progresso em um só lugar.</p>
+      <br></br>
+      <p>Desenvolvimento de uma aplicação que permita a consulta, registro e acompanhamento de
+        treinamentos obrigatórios para colaboradores, com funcionamento offline e sincronização
+        de dados.</p>
     </div>
+    
   );
 };
 
